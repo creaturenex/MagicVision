@@ -14,7 +14,7 @@ Use the power of Magic Vision! Magic Vision allows you to take a photo of a magi
 
 ## Tools used
 
-![MagicVision_dia](/project/images/MagicVision.png)<figcaption align = "center"><b>Fig.1 The Master Plan</b></figcaption><br>
+![MagicVision_dia](/images/MagicVision.png)<figcaption align = "center"><b>Fig.1 The Master Plan</b></figcaption><br>
 
 Magic Vision uses [Microsoft's Azure Serverless Functions](https://docs.microsoft.com/en-us/azure/azure-functions/).
 This allows us to only worry about our application logic and not setting up, configuring, and maintaining our own server.
@@ -41,12 +41,12 @@ The code is written in Node.js and uses npm (node package manager) to install
 ## Step by step (with code snippets)
 Lets review the code!
 
-![setup_code](/project/images/carbon1.png)
+![setup_code](/images/carbon1.png)
 <figcaption align = "center"><b>Fig.2 The Set Up</b></figcaption><br>
 
 Here we set our constants, any required packages, define our endpoints & key. We also define the function `sync delay(milliseconds)` which will be used later.
 
-![setup_code](/project/images/carbon2.png)
+![setup_code](/images/carbon2.png)
 <figcaption align = "center"><b>Fig.3 Twilio Part I</b></figcaption><br>
 
 Here we create a query object from the response body sent via webhook from Twilio to our magic vision function. This is created using the package querystring.
@@ -59,7 +59,7 @@ We then output the message `Image sent via Twilio`.
           Azure Functions uses context.log() to output
           messages to the CLI online.
 
-![setup_code](/project/images/carbon3.png)
+![setup_code](/images/carbon3.png)
 <figcaption align = "center"><b>Fig.4 Computer Vision</b></figcaption><br>
 
 This code section has 3 major parts.
@@ -72,14 +72,14 @@ Second, we fetch the computer vision API again with a GET method to return the a
 
 Last, we just parse the returned text with for the approximate card title and output the message `Probable Card Title`
 
-![setup_code](/project/images/carbon4.png)
+![setup_code](/images/carbon4.png)
 <figcaption align = "center"><b>Fig.5 Scryfall</b></figcaption><br>
 
 Here we call the Scryfall API with a fetch method. We pass the card title as a query parameter, and we use the keyword `fuzzy` to return any image that kind of matches the provided text incase the analysis returns text with errors or extra characters.
 
 We return the relevant card information and parse the card image, prices, and a link to purchase the card.
 
-![setup_code](/project/images/carbon5.png)
+![setup_code](/images/carbon5.png)
 <figcaption align = "center"><b>Fig.6 Twilio Part II</b></figcaption><br>
 
 The last thing we do is send a response message to the magic vision number with the appropriate variables passed in. This is accomplished with the twilio package and the `Message Response()` function.

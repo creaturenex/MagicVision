@@ -1,11 +1,5 @@
 # Magic Vision
 
-## About Me
-**Oscar M Romero**
-
-I am a Software Engineer. I am fascinated by the creativity and fusion of software and hardware. I love learning, and I am looking for opportunities to learn and grow with others.
-
-
 ## The Premise
 
 So, you decided to learn how to play magic the gathering. You went out, bought all the card packs, and spent over $200. You now have a bunch of duplicates or useless cards. What's worse is that you don't even have a card you want or need to use in a tournament. This year's total payout for the world championship is $250,000 [World Championship](https://magic.gg/news/magic-world-championship-xxvii-prize-payouts-and-appearance-fees).

@@ -6,7 +6,7 @@ So, you decided to learn how to play magic the gathering. You went out, bought a
 
 Use the power of Magic Vision! Magic Vision allows you to take a photo of a magic card. The image is then analyzed and returns a cleaned up photo, current market value, and a link to buy/sell that card.
 
-[![Magic Vision Talk](https://user-images.githubusercontent.com/15052690/156020159-b5332cce-416f-4197-8a4c-462347a42a0a.png)](https://www.loom.com/embed/d0b02f2c4d054cd69c029d89f22d2a9e")
+[![Magic Vision Talk](https://user-images.githubusercontent.com/15052690/156020159-b5332cce-416f-4197-8a4c-462347a42a0a.png)](https://www.loom.com/share/d0b02f2c4d054cd69c029d89f22d2a9e")
 
 ## Tools used
 
